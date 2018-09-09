@@ -1,0 +1,15 @@
+AllCops:
+  TargetRubyVersion:
+    2.5.1
+  Exclude:
+    - 'db/schema.rb'
+Rails:
+  Enabled: true
+Documentation:
+  Enabled: false
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+Lint/MissingCopEnableDirective:
+  Enabled: false

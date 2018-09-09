@@ -1,0 +1,20 @@
+production:
+  url: <%= Rails.application.credentials[Rails.env.to_sym][:database_url] %>
+
+development:
+  adapter: "postgresql"
+  encoding: "unicode"
+  database: rayuv_api_development
+  username: <%= Rails.application.credentials[Rails.env.to_sym][:db_postgres_user] %>
+  password: <%= Rails.application.credentials[Rails.env.to_sym][:db_postgres_pwd] %>
+  host: <%= Rails.application.credentials[Rails.env.to_sym][:db_postgres_host] %>
+  port: <%= Rails.application.credentials[Rails.env.to_sym][:db_postgres_port] %>
+
+test:
+  adapter: "postgresql"
+  encoding: "unicode"
+  database: rayuv_api_test
+  username: <%= Rails.application.credentials[Rails.env.to_sym][:db_postgres_user] %>
+  password: <%= Rails.application.credentials[Rails.env.to_sym][:db_postgres_pwd] %>
+  host: <%= Rails.application.credentials[Rails.env.to_sym][:db_postgres_host] %>
+  port: <%= Rails.application.credentials[Rails.env.to_sym][:db_postgres_port] %>
